@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <cdk-virtual-scroll-viewport itemSize="56" minBufferPx="900" maxBufferPx="1350">
+    <ion-list>
+      <ion-item *cdkVirtualFor="let item of fixedSizeData; let i = index">
+        <ion-avatar slot="start">
+          <img src="https://loremflickr.com/40/40" />
+        </ion-avatar>
+        <ion-label> item {{i}} </ion-label>
+      </ion-item>
+    </ion-list>
+  </cdk-virtual-scroll-viewport>
+</ion-content>
