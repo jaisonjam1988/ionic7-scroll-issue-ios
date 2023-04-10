@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content>
-  <cdk-virtual-scroll-viewport itemSize="56" minBufferPx="900" maxBufferPx="1350">
+  <cdk-virtual-scroll-viewport [itemSize]="itemSize" minBufferPx="900" maxBufferPx="1350">
     <ion-list>
       <ion-item *cdkVirtualFor="let item of fixedSizeData; let i = index">
         <ion-avatar slot="start">
